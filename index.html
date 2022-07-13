@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/359240b071.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <nav>
+    <div id="home">
+    <ul class="nav justify-content-around justify-content-md-end py-2">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#apresentacao">Apresentação</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Projetos</a>
+        </li>
+      </ul>
+    </nav>  
+  
+      <div class="fullVh px-5 py-4" id="home">
+        <h1 id='home-h1'class="py-1 display-2"> Olá, <br> meu nome é Denis</h1>
+        <h5 id='home-h5' class="display-4">E eu sou um desenvolvedor front-end</h5>
+        <a href="https://github.com/2D-nz"> <i class="fa-brands fa-github fa-5x my-5"></i></a>
+        <a href='https://www.linkedin.com/in/denis-silva-82b316190/'><i class="fa-brands fa-linkedin fa-5x m-5"></i></a>
+
+        <div class="py-2 text-center">
+          <a href="#apresentacao"><i class="fa-solid fa-angle-down fa-3x seta-baixo my-5"></i></a>
+        </div>
+  </div>
+
+
+    <div id="apresentacao" class="fullVh text-center">
+          <h2 class="display-3"> Apresentação </h2>
+          <p class="m-4 text-justify-center"> Tenho 19 anos, e estou em busca do meu primeiro emprego na área de programação <br> Estudo programação e desenvolvimento front-end há aproximadamente um ano, através de vídeos e sites na internet e pretendo focar em me tornar um desenvolvedor com React.js como prioridade, mas ao longo do tempo, estudar back-end para futuramente, me tornar um desenvolvedor FullStack </p> <br>
+          <i class="fa-solid fa-code fa-5x"></i>
+
+          <div class="py-2 text-center">
+            <a href="#habilidades"><i class="fa-solid fa-angle-down fa-3x seta-baixo my-5"></i></a>
+          </div>
+    </div>
+        
+
+
+    <div id="habilidades" class='fullVh container-fluid'>
+      <p class='display-2 text-center'> Habilidades </p>
+      <div class="row">
+        <div class="col">
+          <div class="row m-2 p-5">
+            <div class="col"> <i id="js" class="fa-brands fa-7x fa-js" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
+            <div class="col"> <i id='html-css' class="fa-brands fa-7x fa-html5" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> <i id="html-css" class="fa-brands fa-7x fa-css3-alt" onmouseover="info(this.id)"></i> </div>
+          </div>
+          <div class="row m-2 p-5">
+            <div class="col"> <i id='react' class="fa-brands fa-7x fa-react" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
+            <div class="col"> <i id="bootstrap" class="fa-brands fa-7x fa-bootstrap" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
+          </div>
+        </div>
+        <div class="col">
+          <div id="js-on" class="esconder">
+          <p class="display-4 my-2" id="nomeHabilidade"> Pause o mouse por cima para mais informações </p>
+          <p id="descricao" class="esconder"></p>
+        
+          </div>
+
+          <div id="js-off" class="descricaoTecnologia"> 
+            <h2> Javascript: </h2> <p>Uma linguagem de programação que serve tanto para front-end quanto back-end. No âmbito de desenvolvimento Web, ela é a responsável por tornar uma página interativa.</p>
+            
+            <h2> HTML + CSS: </h2> <p>HTML é uma linguagem de marcação, serve para estruturar sites, e CSS é uma tecnologia que serve para estilizar o HTML, tornando assim as páginas mais bonitas, responsivas e organizadas</p>
+            
+            <h2> React: </h2> <p> React.js é uma biblioteca de javascript, criada pelos engenheiros do Facebook. É utilizada para criar interfaces de usuário em páginas web. </p>
+            <h2> Bootstrap: </h2> <p> Bootstrap é um framework para desevnvolvimento de componentes e interfaces </p>
+          </div>
+        </div>
+      </div>
+      <div class="py-2 text-center">
+        <a href="#projetos"><i class="fa-solid fa-angle-down fa-3x seta-baixo my-5"></i></a>
+      </div>
+    </div>
+
+    <div id="projetos" class="fullVh">
+      <div>
+        <p class="display-1 text-center"> Projetos </p>
+        <p class="display-4 text-center"> Alguns dos Projetos em que trabalhei</p>
+      </div>
+      <div class="container">
+        <div class="projetos-container row">
+            <div class="projeto-item text-center m-5 col">
+              <img src='./images/interactive-rating-component.jpeg'>
+              <p class="my-3"> Interactive user rating </p>
+              <p> Projeto de avaliação, onde o usuário pode clicar na nota desejada, e será  levado para uma tela de agradecimento</p>
+              <button> <a href="https://2d-nz.github.io/FEM---interactive-user-rating/"> Veja no Github Pages</a> </button>
+            </div> 
+            <div class="projeto-item text-center m-5 col">
+              <img src='./images/3-column preview card component.jpg'>
+              <p class="my-3"> 3 Column Preview Card Component </p>
+              <p> Um componente de 3 cartões sobre carros, separados em colunas feito de maneira responsiva </p>
+              <button> <a href="https://2d-nz.github.io/FEM-3-column-preview-card-component/3-column-preview-card-component-main/index.html"> Veja no Github Pages</a> </button>
+            </div> 
+
+        </div>
+      </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
