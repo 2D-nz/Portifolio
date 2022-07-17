@@ -23,15 +23,15 @@
           <a class="nav-link" href="#apresentacao">Apresentação</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Habilidades</a>
+          <a class="nav-link" href="#habilidades">Habilidades</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Projetos</a>
+          <a class="nav-link" href="#projetos">Projetos</a>
         </li>
       </ul>
     </nav>  
   
-      <div class="fullVh px-5 py-4" id="home">
+  <div class="fullVh px-5 py-4" id="home">
         <h1 id='home-h1'class="py-1 display-2"> Olá, <br> meu nome é Denis</h1>
         <h5 id='home-h5' class="display-4">E eu sou um desenvolvedor front-end</h5>
         <a href="https://github.com/2D-nz"> <i class="fa-brands fa-github fa-5x my-5"></i></a>
@@ -41,7 +41,7 @@
           <a href="#apresentacao"><i class="fa-solid fa-angle-down fa-3x seta-baixo my-5"></i></a>
         </div>
   </div>
-
+</div>
 
     <div id="apresentacao" class="fullVh text-center">
           <h2 class="display-3"> Apresentação </h2>
@@ -57,21 +57,21 @@
 
     <div id="habilidades" class='fullVh container-fluid'>
       <p class='display-2 text-center'> Habilidades </p>
-      <div class="row">
-        <div class="col">
-          <div class="row m-2 p-5">
-            <div class="col"> <i id="js" class="fa-brands fa-7x fa-js" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
-            <div class="col"> <i id='html-css' class="fa-brands fa-7x fa-html5" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> <i id="html-css" class="fa-brands fa-7x fa-css3-alt" onmouseover="info(this.id)"></i> </div>
-          </div>
-          <div class="row m-2 p-5">
-            <div class="col"> <i id='react' class="fa-brands fa-7x fa-react" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
-            <div class="col"> <i id="bootstrap" class="fa-brands fa-7x fa-bootstrap" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
-          </div>
+      <div class="row justify-content-around my-5">
+            <div class=""> <i id="js" class="fa-brands fa-5x fa-js" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
+            <div class="row m-1">
+              <div class=""> <i id='html-css' class="fa-brands fa-5x fa-html5" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> <i id="html-css" class="fa-brands fa-5x fa-css3-alt" onmouseleave="defaultInfo()" onmouseover="info(this.id)"></i> </div>
+            </div>
+
+            <div class=""> <i id='react' class="fa-brands fa-5x fa-react" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
+            <div class=""> <i id="bootstrap" class="fa-brands fa-5x fa-bootstrap" onmouseover="info(this.id)" onmouseleave="defaultInfo()"></i> </div>
         </div>
-        <div class="col">
+        
+
+        <div class="col textoHabilidades">
           <div id="js-on" class="esconder">
-          <p class="display-4 my-2" id="nomeHabilidade"> Pause o mouse por cima para mais informações </p>
-          <p id="descricao" class="esconder"></p>
+            <p class="display-4 my-2" id="nomeHabilidade"> Pause o mouse por cima para mais informações </p>
+            <p id="descricao" class="esconder"></p>
         
           </div>
 
@@ -84,38 +84,60 @@
             <h2> Bootstrap: </h2> <p> Bootstrap é um framework para desevnvolvimento de componentes e interfaces </p>
           </div>
         </div>
-      </div>
-      <div class="py-2 text-center">
-        <a href="#projetos"><i class="fa-solid fa-angle-down fa-3x seta-baixo my-5"></i></a>
-      </div>
+
+        <div class="py-2 text-center">
+          <a href="#projetos"><i class="fa-solid fa-angle-down fa-3x seta-baixo"></i></a>
+        </div>
     </div>
+
+
+      
+    
 
     <div id="projetos" class="fullVh">
       <div>
-        <p class="display-1 text-center"> Projetos </p>
-        <p class="display-4 text-center"> Alguns dos Projetos em que trabalhei</p>
-      </div>
-      <div class="container">
-        <div class="projetos-container row">
-            <div class="projeto-item text-center m-5 col">
-              <img src='./images/interactive-rating-component.jpeg'>
-              <p class="my-3"> Interactive user rating </p>
-              <p> Projeto de avaliação, onde o usuário pode clicar na nota desejada, e será  levado para uma tela de agradecimento</p>
-              <button> <a href="https://2d-nz.github.io/FEM---interactive-user-rating/"> Veja no Github Pages</a> </button>
-            </div> 
-            <div class="projeto-item text-center m-5 col">
-              <img src='./images/3-column preview card component.jpg'>
-              <p class="my-3"> 3 Column Preview Card Component </p>
-              <p> Um componente de 3 cartões sobre carros, separados em colunas feito de maneira responsiva </p>
-              <button> <a href="https://2d-nz.github.io/FEM-3-column-preview-card-component/3-column-preview-card-component-main/index.html"> Veja no Github Pages</a> </button>
-            </div> 
-
-        </div>
+        <p class="display-2 text-center"> Projetos </p>
+        <h4 class="text-center"> Alguns dos Projetos em que trabalhei</h4>
       </div>
 
+      <!--
+         <img src='./images/interactive-rating-component.jpeg'>  <button> <a href="https://2d-nz.github.io/FEM---interactive-user-rating/"> Veja no Github Pages</a> </button>
+        
+        <img src='./images/3-column preview card component.jpg'>
+        
+      -->
+
+      <div class="container-fluid text-center">
+        <div class="row justify-content-around">
+
+          <div class="col-md-4 col-sm-12 text-center m-4 projeto-item">
+            <div>
+              <img src='./images/interactive-rating-component.jpeg'> 
+            </div>
+            <p class="projeto-titulo"> Interactive Rating Component </p>
+            <p class="projeto-texto"> Um componente interativo de avaliação, desafio do site Front End Mentor </p>
+            <button> <a href="https://2d-nz.github.io/FEM-3-column-preview-card-component/3-column-preview-card-component-main/index.html"> Veja esse projeto no ar </a> </button>
+            
+
+          </div>
+
+          <div class="col-md-4 col-sm-12 text-center m-4 projeto-item">
+            <div>
+              <img src='#' style='height: 200px; color: black; width: 200px;' title="Em Breve" class="text-center"> 
+            </div>
+            
+            <p class="projeto-titulo"> Em Breve </p>
+            <p class="projeto-texto"> Em breve um projeto será adicionado nesta área </p>
+            <button> <a href="#" class="nav-link disabled"> Veja esse projeto no ar </a> </button>
+
+
+          </div>
+
+
+          </div>
         </div>
+      
       </div>
-    </div>
 
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

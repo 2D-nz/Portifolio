@@ -7,6 +7,8 @@ window.addEventListener('load', (event) =>{
 if (window.innerWidth < 1000){
     document.getElementById('home-h1').classList.remove('display-2')
     document.getElementById('home-h5').classList.remove('display-4')
+    document.getElementById('nomeHabilidade').classList.remove('display-4')
+    document.getElementById('nomeHabilidade').innerText = 'Selecione para mais informações'
 }
 
 
